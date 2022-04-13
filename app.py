@@ -4,7 +4,7 @@ from http.server import HTTPServer, CGIHTTPRequestHandler# Make sure the server 
 
 os.chdir('.')
 # Create server object listening the port 80
-server_object = HTTPServer(server_address=('', 8081), RequestHandlerClass=CGIHTTPRequestHandler)
+server_object = HTTPServer(server_address=('', 8080), RequestHandlerClass=CGIHTTPRequestHandler)
 # Start the web server
 print("this is a test")
 server_object.serve_forever()
